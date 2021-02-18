@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 url = 'https://www.hotsaucemall.com/hot-sauce.html'
-create_account_url = 'https://www.hotsaucemall.com/checkout.html'
+# create_account_url = 'https://www.hotsaucemall.com/checkout.html'
 
 
 @pytest.fixture(scope="session")
