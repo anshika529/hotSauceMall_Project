@@ -19,9 +19,10 @@ def home_page(browser):
 def click_any_product(browser):
     # randomly click on any product from homepage
     links = browser.find_elements_by_css_selector('a.mm-card-grid-item__text')
-    startint = 0
-    endint = 11
-    links[random.randint(startint,endint)].click()
+#     startint = 0
+#     endint = 11
+    l = links[random.randint(0, len(links) - 1)]
+    l.click()
     time.sleep(2)
 
 
@@ -59,9 +60,11 @@ def search_product(browser):
 def random_click_product(browser):
     # selecting product randomly
     links = browser.find_elements_by_css_selector('a.mm-card-grid-item__text')
-    startint = 0
-    endint = 11
-    links[random.randint(startint,endint)].click()
+#     startint = 0
+#     endint = 11
+#     links[random.randint(startint,endint)].click()
+    l = links[random.randint(0, len(links) - 1)]
+    l.click()
     time.sleep(2)
 
 
@@ -113,7 +116,7 @@ def click_create_account(browser):
 @when("User will fill all the required details for account creation")
 def user_details(browser):
     #email
-    browser.find_element_by_css_selector('input#l-Customer_LoginEmail').send_keys('piii@gmail.com')
+    browser.find_element_by_css_selector('input#l-Customer_LoginEmail').send_keys('kiii@gmail.com')
     browser.find_element_by_css_selector('input#l-Customer_Password').send_keys('xyz12345')
     browser.find_element_by_css_selector('input#l-Customer_VerifyPassword').send_keys('xyz12345')
     browser.find_element_by_css_selector('input#l-Customer_ShipFirstName').send_keys('xyz')
@@ -130,7 +133,7 @@ def user_details(browser):
     browser.find_element_by_css_selector('input#l-Customer_BillLastName').send_keys('abc')
     browser.find_element_by_css_selector('input#l-Customer_BillCompany').send_keys('qwerty')
     # email
-    browser.find_element_by_css_selector('input#l-Customer_BillEmail').send_keys('piii@gmail.com')
+    browser.find_element_by_css_selector('input#l-Customer_BillEmail').send_keys('kiii@gmail.com')
     browser.find_element_by_css_selector('input#l-Customer_BillPhone').send_keys('123456754')
     browser.find_element_by_css_selector('input#l-Customer_BillAddress1').send_keys('mink1')
     browser.find_element_by_css_selector('input#l-Customer_BillAddress2').send_keys('mink2')

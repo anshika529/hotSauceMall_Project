@@ -8,18 +8,18 @@ Feature: HotSauceMall web browsing
     When User will click Randomly on one product
     When User will click on add to cart button
     When User will click on cart icon
-#    When Verify the no. of products in the cart
-    When User will click on checkout
-    When User will click on secure checkout
-    When User will click on create new account button
-    When User will fill all the required details for account creation
-    When User will click on save
-    When User will click on continue to shopping
-    When User will go to the cart
-    When User will click on checkout button
-    When User will click on secure checkout button
-    When User will click on continue to ship
-    When User will click on continue to pay
+    When Verify the no. of products in the cart
+#    When User will click on checkout
+#    When User will click on secure checkout
+#    When User will click on create new account button
+#    When User will fill all the required details for account creation
+#    When User will click on save
+#    When User will click on continue to shopping
+#    When User will go to the cart
+#    When User will click on checkout button
+#    When User will click on secure checkout button
+#    When User will click on continue to ship
+#    When User will click on continue to pay
 
 
 #Launch "https://www.hotsaucemall.com/hot-sauce.html"
